@@ -1,98 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  <title>Getting started with Dagger2 on Android | {Code Rant}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="So if you are like me you have heard the buzz about Dagger 2. You have probably heard that it makes testing your program easier and allows you to “Inject“ dependencies.
-You have perhaps even read the">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Getting started with Dagger2 on Android">
-<meta property="og:url" content="prasadtv.net/2015/08/03/dagger2/index.html">
-<meta property="og:site_name" content="{Code Rant}">
-<meta property="og:description" content="So if you are like me you have heard the buzz about Dagger 2. You have probably heard that it makes testing your program easier and allows you to “Inject“ dependencies.
-You have perhaps even read the">
-<meta property="og:updated_time" content="2015-11-22T08:03:47.116Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Getting started with Dagger2 on Android">
-<meta name="twitter:description" content="So if you are like me you have heard the buzz about Dagger 2. You have probably heard that it makes testing your program easier and allows you to “Inject“ dependencies.
-You have perhaps even read the">
-  
-  
-  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
-  
-
-</head>
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">{Code Rant}</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/about-me">About Me</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="prasadtv.net"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-dagger2" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/08/03/dagger2/" class="article-date">
-  <time datetime="2015-08-03T07:15:44.000Z" itemprop="datePublished">2015-08-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Getting started with Dagger2 on Android
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><p>So if you are like me you have heard the buzz about Dagger 2. You have probably heard that it makes testing your program easier and allows you to “<em>Inject</em>“ dependencies.</p>
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="Hi, I am Prasad Thondamuthur Vasanth. This is my blog.
+"><title>Getting started with Dagger2 on Android | {Code Rant}</title><link rel="stylesheet" type="text/css" href="/css/normalize.css"><link rel="stylesheet" type="text/css" href="/css/highlight.css"><link rel="stylesheet" type="text/css" href="/css/very-simple.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"></head><body><!-- include the sidebar--><!-- include ./includes/sidebar.jade--><!-- Blog title and subtitle--><header><div class="container header"><a id="logo" href="/." class="title">{Code Rant}</a><span class="subtitle">Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live</span><label id="toggle-menu" for="menu" onclick><i class="fa fa-bars"></i></label></div></header><!-- use checkbox hack for toggle nav-bar on small screens--><input id="menu" type="checkbox"><!-- Navigation Links--><nav id="nav"><div class="container"><a href="/" class="sidebar-nav-item active">Home</a><a href="/archives" class="sidebar-nav-item">Archives</a><a href="/about-me" class="sidebar-nav-item">About Me</a></div></nav><div id="header-margin-bar"></div><!-- gallery that comes before the header--><div class="wrapper"><div class="container post-header"><h1>Getting started with Dagger2 on Android</h1></div></div><div class="wrapper"><div class="container meta"><div class="post-time">2015-08-03</div><div class="post-tags"><a class="post-tag-link" href="/tags/android/">android</a>/<a class="post-tag-link" href="/tags/dagger2/">dagger2</a>/<a class="post-tag-link" href="/tags/java/">java</a></div></div></div><article><div class="container post"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><p>So if you are like me you have heard the buzz about Dagger 2. You have probably heard that it makes testing your program easier and allows you to “<em>Inject</em>“ dependencies.</p>
 <p>You have perhaps even read the <a href="http://google.github.io/dagger/" target="_blank" rel="external">google blog</a> and now know more about coffee makers than you intended.</p>
 <p>Well, I went through the above process myself and have reached a point where I have a confident outlook on Dagger2. This is my attempt to describe it in a simpler language which is hopefully easier to understand.</p>
 <p>Before we even begin with Dagger2, we need to be familiar with few concepts.</p>
-<p>####What is Dependency Injection:<br>This is a fancy word for a very common pattern for writing code. When your class has objects of other classes as its fields, and it is necessary to create objects of these fields to work with your class, your class is said to be dependent on the fields <em>(well, the classes the fields belong to)</em>.</p>
-<p>For example, let us take a class called Car and Engine. A car needs an engine for running. Therefore, Car depends on Engines.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> Car &#123;</span><br><span class="line">  Engine engine; <span class="comment">// This is a dependency</span></span><br><span class="line">  </span><br><span class="line">  ...</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">drive</span> <span class="params">()</span></span>&#123;</span><br><span class="line">    engine.run();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>Now we could make an engine inside the Cars constructor as follows.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> Car &#123;</span><br><span class="line">  Engine engine;</span><br><span class="line">  </span><br><span class="line">  ...</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Car</span> <span class="params">()</span></span>&#123;</span><br><span class="line">    ...  </span><br><span class="line">    <span class="keyword">this</span>.engine = <span class="keyword">new</span> Engine();</span><br><span class="line">	...</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="What_is_Dependency_Injection_3A"><a href="#What_is_Dependency_Injection_3A" class="headerlink" title="What is Dependency Injection:"></a>What is Dependency Injection:</h4><p>This is a fancy word for a very common pattern for writing code. When your class has objects of other classes as its fields, and it is necessary to create objects of these fields to work with your class, your class is said to be dependent on the fields <em>(well, the classes the fields belong to)</em>.</p>
+<p>For example, let us take a class called Car and Engine. A car needs an engine for running. Therefore, Car depends on Engines.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> Car &#123;</span><br><span class="line">  Engine engine; <span class="comment">// This is a dependency</span></span><br><span class="line"></span><br><span class="line">  ...</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">drive</span> <span class="params">()</span></span>&#123;</span><br><span class="line">    engine.run();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Now we could make an engine inside the Cars constructor as follows.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> Car &#123;</span><br><span class="line">  Engine engine;</span><br><span class="line"></span><br><span class="line">  ...</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Car</span> <span class="params">()</span></span>&#123;</span><br><span class="line">    ...  </span><br><span class="line">    <span class="keyword">this</span>.engine = <span class="keyword">new</span> Engine();</span><br><span class="line">	...</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>This is what is known as hard-coupling. It makes it difficult to test the Car class and Engine class separately. You always need to create an engine class as well and that means your test cases are going to test Cars and Engines even if you just wanted to test Cars. Cars and Engines must be manufactured separately and assembled whenever needed.</p>
 <p>Now let us make a small change.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> Car &#123;</span><br><span class="line">  Engine engine;</span><br><span class="line">  </span><br><span class="line">  ...</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Car</span> <span class="params">(Engine engine)</span></span>&#123; <span class="comment">//Engine is being "Injected" here</span></span><br><span class="line">    ...  </span><br><span class="line">    <span class="keyword">this</span>.engine = engine;</span><br><span class="line">	...</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> Car &#123;</span><br><span class="line">  Engine engine;</span><br><span class="line"></span><br><span class="line">  ...</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Car</span> <span class="params">(Engine engine)</span></span>&#123; <span class="comment">//Engine is being "Injected" here</span></span><br><span class="line">    ...  </span><br><span class="line">    <span class="keyword">this</span>.engine = engine;</span><br><span class="line">	...</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>This is exactly what dependency injection is. We have decoupled Car and Engine. We are telling Java an appropriate Engine object will be provided whenever a Car must be instantiated.</p>
 <!---
  You could just create the fields inside the constructor of your class right? But this is what is known as hard-coupling. Which means if one of these connected classes are buggy, all of them fail. It is hard to debug which one caused the issue. Did it happen in your constructor or in the constructor of the dependencies? Or one of their dependencies etc...
@@ -100,14 +16,14 @@ You have perhaps even read the">
 To make it easier to manage this situation, what we need to do is make sure that none of the dependent fields are created inside your class constructor. -->
 <p>You do all the creation somewhere else, and pass it into the constructor of your class (this is what “injection” means). Unfortunately, this also means there is a giant pile of code which oversees creation of every object in your program and now that needs to be maintained carefully.</p>
 <p>This is where Dagger2 comes in. It writes the giant pile of code for you. You just need to give it enough information to do that using annotations (discussed below &darr;).</p>
-<p>####Annotations:<br>Annotations are a way of tagging some metadata to your Java code. This data is used by the compiler or the Java runtime when processing your code.<br>Dagger (the first one) used runtime annotations. This means the dependency injection is done when your code is running. This makes your program slower and you can only catch error at runtime.</p>
+<h4 id="Annotations_3A"><a href="#Annotations_3A" class="headerlink" title="Annotations:"></a>Annotations:</h4><p>Annotations are a way of tagging some metadata to your Java code. This data is used by the compiler or the Java runtime when processing your code.<br>Dagger (the first one) used runtime annotations. This means the dependency injection is done when your code is running. This makes your program slower and you can only catch error at runtime.</p>
 <p>Dagger2 uses compile time annotation processing. This means Dagger2 generates the dependency Injection code early on, merges with your code and then compiles them. If there is anything wrong with how you used Dagger2, you will get the error as soon as you hit compile (with the exact line numbers and everything).</p>
 <hr>
 <p>Ok, so let us get started on Dagger2.</p>
 <p>Dagger2 gives us a few basic annotations to work with. The best way to learn them is by example. Let us build a simple Android app.</p>
 <p>This will be a basic demo app. It will have a MainActivity, a fragment and a model class. It will accomplish the following things:-</p>
 <ol>
-<li>The Fragment <code>Dagger2Fragment</code> will have a TextView. The text view will show a message. </li>
+<li>The Fragment <code>Dagger2Fragment</code> will have a TextView. The text view will show a message.</li>
 <li>This Message will consist of the string “Hello from Dagger2: “ + Some message string + a random number. We will store the message string and the random number in a model class <code>MessageData</code></li>
 <li>The fragment now has a dependency on this <code>MessageData</code> object which needs to be resolved.</li>
 <li>We will have a newInstance method to create our Fragment instead of the constructor. We will tell Dagger2 to use this method in a Module class <code>TutModule</code></li>
@@ -116,7 +32,7 @@ To make it easier to manage this situation, what we need to do is make sure that
 <p>Let us go step by step. First is to integrate Dagger2 into your project. Go to the <em>build.gradle</em> file in your <em>root</em> folder. Make sure it looks like this.</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">buildscript &#123;</span><br><span class="line">    repositories &#123;</span><br><span class="line">        jcenter()</span><br><span class="line">    &#125;</span><br><span class="line">    dependencies &#123;</span><br><span class="line">        classpath <span class="string">'com.android.tools.build:gradle:1.2.3'</span></span><br><span class="line">        classpath <span class="string">'com.neenbedankt.gradle.plugins:android-apt:1.4'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">allprojects &#123;</span><br><span class="line">    repositories &#123;</span><br><span class="line">        jcenter()</span><br><span class="line">        maven &#123;</span><br><span class="line">            url <span class="string">'https://oss.sonatype.org/content/repositories/snapshots/'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>Now go to the <em>build.gradle</em> of your <em>app</em> folder. Add the Dagger plugin and dependencies like this</p>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">apply <span class="string">plugin:</span> <span class="string">'com.android.application'</span></span><br><span class="line">apply <span class="string">plugin:</span> <span class="string">'com.neenbedankt.android-apt'</span></span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">dependencies &#123;</span><br><span class="line">    compile fileTree(<span class="string">dir:</span> <span class="string">'libs'</span>, <span class="string">include:</span> [<span class="string">'*.jar'</span>])</span><br><span class="line">    compile <span class="string">'com.android.support:appcompat-v7:22.2.1'</span></span><br><span class="line">	</span><br><span class="line">	... all your dependencies here...</span><br><span class="line">    compile <span class="string">'com.jakewharton:butterknife:6.1.0'</span></span><br><span class="line">	</span><br><span class="line">	...Include these <span class="keyword">for</span> Dagger2...</span><br><span class="line">    compile <span class="string">'com.google.dagger:dagger:2.0'</span></span><br><span class="line"></span><br><span class="line">    apt <span class="string">"com.google.dagger:dagger-compiler:2.0"</span></span><br><span class="line"></span><br><span class="line">    provided <span class="string">'javax.annotation:jsr250-api:1.0'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">apply <span class="string">plugin:</span> <span class="string">'com.android.application'</span></span><br><span class="line">apply <span class="string">plugin:</span> <span class="string">'com.neenbedankt.android-apt'</span></span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">dependencies &#123;</span><br><span class="line">    compile fileTree(<span class="string">dir:</span> <span class="string">'libs'</span>, <span class="string">include:</span> [<span class="string">'*.jar'</span>])</span><br><span class="line">    compile <span class="string">'com.android.support:appcompat-v7:22.2.1'</span></span><br><span class="line"></span><br><span class="line">	... all your dependencies here...</span><br><span class="line">    compile <span class="string">'com.jakewharton:butterknife:6.1.0'</span></span><br><span class="line"></span><br><span class="line">	...Include these <span class="keyword">for</span> Dagger2...</span><br><span class="line">    compile <span class="string">'com.google.dagger:dagger:2.0'</span></span><br><span class="line"></span><br><span class="line">    apt <span class="string">"com.google.dagger:dagger-compiler:2.0"</span></span><br><span class="line"></span><br><span class="line">    provided <span class="string">'javax.annotation:jsr250-api:1.0'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>The plugin is applied on line 2, and then the dependencies are included as shown.</p>
 <p>####@Inject<br>This is in the <code>javax.inject.Inject</code> package.</p>
 <p>This is used by a class to share information on how to inject dependencies into itself. Its meaning depends on the context.</p>
@@ -141,85 +57,10 @@ To make it easier to manage this situation, what we need to do is make sure that
 <p>Now you may have many modules in your project. You need to tell Dagger2 which ones to use. Component is the place to provide this information. Components are interfaces.<br>When you create a Component Interface, Dagger2 automatically creates a class with name <strong><code>Dagger+your-component-name</code></strong>.<br>This class will have a method for each module included in the component, and a builder method to create an object of the component.</p>
 <figure class="highlight java"><figcaption><span>TutComponent.java</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> javax.inject.Singleton;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> dagger.Component;</span><br><span class="line"></span><br><span class="line"><span class="annotation">@Singleton</span></span><br><span class="line"><span class="annotation">@Component</span>(modules = &#123;TutModule.class&#125;)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">TutComponent</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function">Dagger2Fragment <span class="title">dagger2Fragment</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>Finally, once you have the component use the creator methods in it to get the Objects you need.</p>
-<figure class="highlight java"><figcaption><span>MainActivity.java</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">		</span><br><span class="line">        TutComponent tutComponent = DaggerTutComponent.create();</span><br><span class="line"></span><br><span class="line">        Dagger2Fragment fragment = tutComponent.dagger2Fragment();</span><br><span class="line">        getFragmentManager().beginTransaction().add(R.id.fragment_layout, fragment, <span class="string">"Dagger2Fragment"</span>).commit();</span><br><span class="line"></span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>MainActivity.java</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line"></span><br><span class="line">        TutComponent tutComponent = DaggerTutComponent.create();</span><br><span class="line"></span><br><span class="line">        Dagger2Fragment fragment = tutComponent.dagger2Fragment();</span><br><span class="line">        getFragmentManager().beginTransaction().add(R.id.fragment_layout, fragment, <span class="string">"Dagger2Fragment"</span>).commit();</span><br><span class="line"></span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>Our component is <code>TutComponent</code>. Dagger2 creates a class <code>DaggerTutComponent</code> which implements <code>TutComponent</code> interface.</p>
 <hr>
 <p>Lastly, if you want to test your code in a test environment, make a module which is customized with test data (like fake credit cards, pointing to your test server, preset model data to simulate a scenario etc…) and use that in your components.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="prasadtv.net/2015/08/03/dagger2/" data-id="cihbgb9bb0000oso082z2zvsg" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dagger2/">dagger2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
-
-    </footer>
-  </div>
-  
-    
-  
-</article>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/dagger2/" style="font-size: 10px;">dagger2</a> <a href="/tags/java/" style="font-size: 10px;">java</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recents</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2015/08/03/dagger2/">Getting started with Dagger2 on Android</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2015 Prasad<br>
-      <!--Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>--!>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/about-me" class="mobile-nav-link">About Me</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-
-
-<script src="/js/script.js" type="text/javascript"></script>
-
-  </div>
-</body>
-</html>
+</div><!-- comment system--><div class="container"><hr></div></article><footer id="footer"><div class="container"><div class="bar"><div class="social"></div><div class="footer">© 2016 <a href="/" rel="nofollow">{Code Rant}</a>. Powered by <a rel="nofollow" target="_blank" href="https://hexo.io">Hexo</a>. Theme <a target="_blank" href="https://github.com/lotabout/very-simple">very-simple</a>.</div></div></div></footer><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css"><script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script><script src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js"></script><script>$(document).ready(function() {
+    $(".fancybox").fancybox();
+});</script></body></html>
